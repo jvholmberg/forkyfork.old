@@ -1,19 +1,29 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const TextInput = () => (
+const TextInput = ({
+  label, placeholder, onChange, onClick,
+}) => (
   <span>
-    {this.props.label}
+    {label}
     <input
       type="text"
-      placeholder={this.props.placeholder}
-      onChange={this.props.onchange}
+      placeholder={placeholder}
+      onChange={onChange}
+      onClick={onClick}
     />
   </span>
 );
 
+TextInput.propTypes = {
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  onClick: PropTypes.string,
+  onChange: PropTypes.string,
+};
 TextInput.defaultProps = {
   label: null,
-  hint: null,
+  placeholder: null,
   onClick: null,
   onChange: null,
 };

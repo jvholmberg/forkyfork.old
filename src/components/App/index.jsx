@@ -1,17 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import Header from '../Header/';
 import Navigation from '../Navigation/';
 import Login from '../Login/';
 
-import { userValidation } from '../../reducers/user';
+import { getUser } from '../../actions/user';
 
 const mapStateToProps = (state) => {
-  console.log(userValidation);
-  console.log(state);
-  return null;
+  const user = getUser(state);
+  return ({
+    firstName: user.firstName,
+    lastName: user.lastName,
+  });
 };
 
 // const mapDispatchToProps (dispatch) => {
@@ -24,10 +27,10 @@ class App extends React.Component {
   }
 
   render() {
-    const { userDetails } = this.props;
+    const { firstName, lastName } = this.props;
     return (
       <div>
-        <Header user={userDetails} />
+        <Header firstName={firstName} lastName={lastName} />
         <Navigation />
         <main>
           <Route exact path="/" component={Login} />
@@ -38,9 +41,13 @@ class App extends React.Component {
   }
 }
 
-App.propTypes = userValidation;
+App.propTypes = {
+  firstName: PropTypes.string,
+  lastName: PropTypes.string,
+};
 App.defaultProps = {
-  userDetails: {},
+  firstName: null,
+  lastName: null,
 };
 
 export default connect(mapStateToProps)(App);

@@ -1,22 +1,11 @@
-import PropTypes from 'prop-types';
-
-
-/**
-* @param {int} e
-*
-*/
-export function getState(e) {
-  return {
-    fetching: [PropTypes.boolean, false][e],
-    fetched: [PropTypes.boolean, false][e],
-    error: [PropTypes.object, null][e],
-    user: {
-      username: [PropTypes.string, null][e],
-    },
-  };
-}
-
-export default function reducer(state = getState(1), action) {
+export default function reducer(state = {
+  fetching: false,
+  fetched: false,
+  error: null,
+  user: {
+    username: null,
+  },
+}, action) {
   switch (action.type) {
     case 'LOGIN_USER':
     case 'FETCH_USER':

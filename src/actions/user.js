@@ -1,17 +1,21 @@
 // import axios from 'axios';
 
-export function getUserDetails() {
+export const getUser = (state) => {
+  console.log(state);
   const mockObj = {
-    firstname: 'Firstname',
+    username: 'Username',
+    firstName: 'Firstname',
     lastName: 'LastName',
   };
   return mockObj;
-}
+};
 
-export function registerUser() {
+export const registerUser = (state) => {
+  console.log(state);
   const mockObj = {
-    firstname: 'Firstname',
+    username: 'Username',
+    firstName: 'Firstname',
     lastName: 'LastName',
   };
   return mockObj;
-}
+};

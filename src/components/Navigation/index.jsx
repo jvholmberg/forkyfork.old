@@ -1,11 +1,10 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
+// import PropTypes from 'prop-types';
 
-const componentDidMount = () => {
-};
-
-const render = () => (
+const Navigation = () => (
   <nav>
+    Navigation
     <ul>
       {/* <li><Link href="/">Home</Link></li>
       <li><Link href="/Login">Login</Link></li>
@@ -15,4 +14,4 @@ const render = () => (
   </nav>
 );
 
-export default { componentDidMount, render };
+export default Navigation;
