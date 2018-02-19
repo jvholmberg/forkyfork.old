@@ -2,18 +2,20 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import _ from 'lodash';
 
-import Header from '../Header/';
-import Navigation from '../Navigation/';
-import Login from '../Login/';
+import './reset.scss';
 
-import { getUser } from '../../actions/user';
+import Header from './components/Header';
+import Login from './components/Login';
+
+import { getUser } from './actions/user';
 
 const mapStateToProps = (state) => {
   const user = getUser(state);
   return ({
-    firstName: user.firstName,
-    lastName: user.lastName,
+    firstName: _.get(user, 'firstName'),
+    lastName: _.get(user, 'lastName'),
   });
 };
 
@@ -31,7 +33,6 @@ class App extends React.Component {
     return (
       <div>
         <Header firstName={firstName} lastName={lastName} />
-        <Navigation />
         <main>
           <Route exact path="/" component={Login} />
           <Route path="/login" component={Login} />

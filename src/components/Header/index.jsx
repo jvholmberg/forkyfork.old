@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Navigation from './Navigation';
+
+import './Header.scss';
+
 const Header = ({ firstName, lastName }) => (
-  <header>
+  <header className="Header_Container">
     {firstName} {lastName}
+    <Navigation />
   </header>
 );
 
