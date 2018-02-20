@@ -3,6 +3,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
+// Since eslint-loader cant read global .eslintrc it must be passed as options to loader
+const eslintConfig = require('./.eslintrc');
+
 module.exports = {
   devtool: '#source-map',
   watch: true,
@@ -22,10 +25,7 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /(node_modules|bower_components)/,
       loader: 'eslint-loader',
-      options: {
-        useEslintrc: true,
-
-      },
+      options: eslintConfig,
     }, {
       test: /\.jsx?$/,
       exclude: /(node_modules|bower_components)/,

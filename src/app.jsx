@@ -7,7 +7,8 @@ import _ from 'lodash';
 import './reset.scss';
 
 import Header from './components/Header';
-import Login from './components/Login';
+import Landing from './pages/Landing';
+import Login from './pages/Login';
 
 import { getUser } from './actions/user';
 
@@ -34,7 +35,7 @@ class App extends React.Component {
       <div>
         <Header firstName={firstName} lastName={lastName} />
         <main>
-          <Route exact path="/" component={Login} />
+          <Route exact path="/" component={Landing} />
           <Route path="/login" component={Login} />
         </main>
       </div>

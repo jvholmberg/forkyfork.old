@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput } from '../Input/';
+import { TextInput } from '../../components/Input/';
 
 const Login = () => (
   <div>
