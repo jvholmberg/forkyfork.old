@@ -1,23 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Navigation from './Navigation';
+import NavigationButton from './NavigationButton';
 
 import './Header.scss';
 
-const Header = ({ firstName, lastName }) => (
+const Header = () => (
   <header className="Header_Container">
-    {firstName} {lastName}
-    <Navigation />
+    <Navigation>
+      <NavigationButton to="/">Home</NavigationButton>
+      <NavigationButton to="/login">Login</NavigationButton>
+    </Navigation>
   </header>
 );
 
-Header.defaultProps = {
-  firstName: null,
-  lastName: null,
-};
-Header.propTypes = {
-  firstName: PropTypes.string,
-  lastName: PropTypes.string,
-};
+// Header.defaultProps = {
+//   firstName: null,
+//   lastName: null,
+// };
+// Header.propTypes = {
+//   firstName: PropTypes.string,
+//   lastName: PropTypes.string,
+// };
 export default Header;
