@@ -7,20 +7,23 @@ import './NavigationButton.scss';
 const GetClassName = active =>
   `NavigationButton_Container_Item${active ? '_active' : ''}`;
 
-const NavigationButton = props => (
-  <li className="NavigationButton_Container">
-    <Link className={GetClassName(props.active)} to={props.to}>
-      {props.children}
-    </Link>
-  </li>
-);
+const NavigationButton = (props) => {
+  const { children, to, current } = props;
+  return (
+    <li className="NavigationButton_Container">
+      <Link className={GetClassName(current === to)} to={to}>
+        {children}
+      </Link>
+    </li>
+  );
+};
 NavigationButton.defaultProps = {
-  active: false,
+  current: '/',
   to: '/',
   children: React.Element,
 };
 NavigationButton.propTypes = {
-  active: PropTypes.bool,
+  current: PropTypes.string,
   to: PropTypes.string,
   children: PropTypes.string,
 };

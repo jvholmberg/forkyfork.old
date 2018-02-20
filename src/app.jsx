@@ -24,6 +24,8 @@ const mapStateToProps = (state) => {
 //
 // };
 
+const GetCurrentPath = props => props.location.pathname;
+
 class App extends React.Component {
   componentDidMount() {
 
@@ -33,7 +35,7 @@ class App extends React.Component {
     const { firstName, lastName } = this.props;
     return (
       <div>
-        <Header firstName={firstName} lastName={lastName} />
+        <Header firstName={firstName} lastName={lastName} current={GetCurrentPath(this.props)} />
         <main>
           <Route exact path="/" component={Landing} />
           <Route path="/login" component={Login} />
@@ -46,6 +48,7 @@ class App extends React.Component {
 App.propTypes = {
   firstName: PropTypes.string,
   lastName: PropTypes.string,
+
 };
 App.defaultProps = {
   firstName: null,
