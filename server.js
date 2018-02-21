@@ -15,7 +15,7 @@ app.use(webpackDevMiddleware(compiler, {
 app.use(webpackHotMiddleware(compiler, {
   log: console.log, path: '/__webpack_hmr', heartbeat: 10 * 1000, // eslint-disable-line
 }));
-
+app.use(express.static(path.join(__dirname, 'media')));
 app.use('*', (req, res) => {
   const fileName = path.join(compiler.outputPath, 'index.html');
   compiler.outputFileSystem.readFile(fileName, (err, result) => {
