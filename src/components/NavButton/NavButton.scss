@@ -4,15 +4,15 @@
 }
 .NavButton_Container_Item,
 .NavButton_Container_Item_Active {
-  color: #000;
+  color: #949494;
   text-decoration: none;
 }
 .NavButton_Container_Item:hover,
 .NavButton_Container_Item_Active:hover {
-  text-decoration: underline;
+  color: #000;
 }
 .NavButton_Container_Item {
 }
 .NavButton_Container_Item_Active {
-  text-decoration: underline;
+  color: #000;
 }
