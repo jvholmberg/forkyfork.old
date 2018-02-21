@@ -14,7 +14,6 @@ const TextInput = ({
     />
   </span>
 );
-
 TextInput.propTypes = {
   label: PropTypes.string,
   placeholder: PropTypes.string,
@@ -27,5 +26,4 @@ TextInput.defaultProps = {
   onClick: null,
   onChange: null,
 };
-
 export default TextInput;

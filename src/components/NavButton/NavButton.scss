@@ -1,0 +1,18 @@
+.NavButton_Container {
+  display: inline-block;
+  padding-right: 1rem;
+}
+.NavButton_Container_Item,
+.NavButton_Container_Item_Active {
+  text-decoration: none;
+}
+.NavButton_Container_Item:hover,
+.NavButton_Container_Item_Active:hover {
+  color: #fff;
+}
+.NavButton_Container_Item {
+  color: #999d9f;
+}
+.NavButton_Container_Item_Active {
+  color: #fff;
+}

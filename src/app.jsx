@@ -36,10 +36,8 @@ class App extends React.Component {
     return (
       <div>
         <Header firstName={firstName} lastName={lastName} current={GetCurrentPath(this.props)} />
-        <main>
-          <Route exact path="/" component={Landing} />
-          <Route path="/login" component={Login} />
-        </main>
+        <Route exact path="/" component={Landing} />
+        <Route path="/login" component={Login} />
       </div>
     );
   }

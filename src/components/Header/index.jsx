@@ -1,20 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Navigation from './Navigation';
-import NavigationButton from './NavigationButton';
+import Navbar from '../Navbar';
+import NavButton from '../NavButton';
 
 import './Header.scss';
 
 const Header = (props) => {
   const { current } = props;
-  console.log(props);
   return (
     <header className="Header_Container">
-      <Navigation>
-        <NavigationButton current={current} to="/">Home</NavigationButton>
-        <NavigationButton current={current} to="/login">Login</NavigationButton>
-      </Navigation>
+      <Navbar>
+        <NavButton current={current} to="/">Home</NavButton>
+        <NavButton current={current} to="/login">Login</NavButton>
+      </Navbar>
     </header>
   );
 };
