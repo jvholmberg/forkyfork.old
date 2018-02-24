@@ -1,0 +1,28 @@
+.backbone_title,
+.backbone_subtitle,
+.backbone_heading,
+.backbone_paragraph,
+.backbone_quote
+{
+  line-height: 1.4rem;
+}
+
+.backbone_title {
+  padding: .5rem 0 .5rem;
+  font-size: 32px;
+  letter-spacing: .2rem;
+}
+.backbone_subtitle {
+  padding: .5rem 0 .5rem;
+  font-size: 16px;
+  letter-spacing: .1rem;
+}
+.backbone_heading {
+  padding: .5rem 0 .5rem;
+}
+.backbone_paragraph {
+  font-size: 16px;
+}
+.backbone_quote {
+  font-size: 16px;
+}
