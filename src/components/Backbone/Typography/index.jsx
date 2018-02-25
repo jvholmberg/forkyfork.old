@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 const Title = ({ children, className, ...props }) =>
-  <h1 className={`backbone_title ${className}`} {...props}>{ children }</h1>;
+  <h1 className={`Title ${className}`} {...props}>{ children }</h1>;
 Title.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
@@ -15,7 +15,7 @@ Title.defaultProps = {
 };
 
 const Subtitle = ({ children, className, ...props }) =>
-  <h2 className={`backbone_subtitle ${className}`} {...props}>{ children }</h2>;
+  <h2 className={`Subtitle ${className}`} {...props}>{ children }</h2>;
 Subtitle.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
@@ -26,7 +26,7 @@ Subtitle.defaultProps = {
 };
 
 const Heading = ({ children, className, ...props }) =>
-  <h3 className={`backbone_heading ${className}`} {...props}>{ children }</h3>;
+  <h3 className={`Heading ${className}`} {...props}>{ children }</h3>;
 Heading.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
@@ -37,7 +37,7 @@ Heading.defaultProps = {
 };
 
 const Paragraph = ({ children, className, ...props }) =>
-  <p className={`backbone_paragraph ${className}`} {...props}>{ children }</p>;
+  <p className={`Paragraph ${className}`} {...props}>{ children }</p>;
 Paragraph.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
@@ -48,7 +48,7 @@ Paragraph.defaultProps = {
 };
 
 const Quote = ({ children, className, ...props }) =>
-  <blockquote className={`backbone_quote ${className}`}{...props}>{ children }</blockquote>;
+  <blockquote className={`Quote ${className}`}{...props}>{ children }</blockquote>;
 Quote.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,

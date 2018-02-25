@@ -4,25 +4,25 @@
 .backbone_paragraph,
 .backbone_quote
 {
-  line-height: 1.4rem;
 }
 
-.backbone_title {
+.Title {
   padding: .5rem 0 .5rem;
-  font-size: 32px;
+  font-size: 2rem;
   letter-spacing: .2rem;
 }
-.backbone_subtitle {
+.Subtitle {
   padding: .5rem 0 .5rem;
-  font-size: 16px;
+  font-size: 1.2rem;
   letter-spacing: .1rem;
 }
-.backbone_heading {
+.Heading {
   padding: .5rem 0 .5rem;
 }
-.backbone_paragraph {
-  font-size: 16px;
+.Paragraph {
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
-.backbone_quote {
-  font-size: 16px;
+.Quote {
+  font-size: 1rem;
 }
