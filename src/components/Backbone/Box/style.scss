@@ -1,126 +1,157 @@
-.backbone_wrapper_12, .backbone_wrapper_9, .backbone_wrapper_8, .backbone_wrapper_6,
-.backbone_wrapper_4, .backbone_wrapper_3, .backbone_wrapper_1 {
-  display: flex;
-  float: left;
-}
-.backbone_box_12, .backbone_box_9, .backbone_box_8, .backbone_box_6,
-.backbone_box_4, .backbone_box_3, .backbone_box_1 {
-  float: left;
-  padding: 3rem;
-  box-sizing: border-box;
-  text-align: center;
-}
-
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
-  .backbone_wrapper_12, .backbone_wrapper_9, .backbone_wrapper_8, .backbone_wrapper_6,
-  .backbone_wrapper_4, .backbone_wrapper_3 {
+  .Wrapper_12,.Wrapper_9, .Wrapper_8, .Wrapper_6, .Wrapper_4, .Wrapper_3 {
     display: block;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
   }
-  .backbone_box_12, .backbone_box_9, .backbone_box_8, .backbone_box_6,
-  .backbone_box_4, .backbone_box_3 {
+  .Box_12, .Box_9, .Box_8, .Box_6, .Box_4, .Box_3 {
     display: block;
     padding: 1rem;
-    width: 100%;
     box-sizing: border-box;
-    text-align: center;
   }
-  .backbone_wrapper_1, .backbone_box_1 {
-    display: none;
+  .Wrapper_12, .Box_12 {
+    width: 100%;
+  }
+  .Wrapper_9, .Box_9 {
+    width: 100%;
+  }
+  .Wrapper_8, .Box_8 {
+    width: 100%;
+  }
+  .Wrapper_6, .Box_6 {
+    width: 100%;
+  }
+  .Wrapper_4, .Box_4 {
+    width: 100%;
+  }
+  .Wrapper_3, .Box_3 {
+    width: 100%;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
-  .backbone_wrapper_12, .backbone_wrapper_9,
-  .backbone_box_12, .backbone_box_9 {
+  .Wrapper_12,.Wrapper_9, .Wrapper_8, .Wrapper_6, .Wrapper_4, .Wrapper_3 {
     display: block;
+    float: left;
+  }
+  .Box_12, .Box_9, .Box_8, .Box_6, .Box_4, .Box_3 {
+    display: block;
+    padding: 2rem;
+    float: left;
+    box-sizing: border-box;
+  }
+  .Wrapper_12, .Box_12 {
     width: 100%;
   }
-  .backbone_wrapper_8, .backbone_wrapper_6, .backbone_wrapper_4,
-  .backbone_box_8, .backbone_box_6, .backbone_box_4 {
-    display: block;
+  .Wrapper_9, .Box_9 {
     width: 50%;
   }
-  .backbone_wrapper_3, .backbone_box_3 {
-    display: block;
+  .Wrapper_8, .Box_8 {
     width: 50%;
   }
-  .backbone_wrapper_1, .backbone_box_1 {
-    display: none;
+  .Wrapper_6, .Box_6 {
+    width: 50%;
+  }
+  .Wrapper_4, .Box_4 {
+    width: 50%;
+  }
+  .Wrapper_3, .Box_3 {
+    width: 50%;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
-  .backbone_wrapper_12, .backbone_wrapper_9,
-  .backbone_box_12, .backbone_box_9 {
+  .Wrapper_12,.Wrapper_9, .Wrapper_8, .Wrapper_6, .Wrapper_4, .Wrapper_3 {
+    display: flex;
+    float: left;
+  }
+  .Box_12, .Box_9, .Box_8, .Box_6, .Box_4, .Box_3 {
     display: block;
+    padding: 2rem;
+    float: left;
+    box-sizing: border-box;
+  }
+  .Wrapper_12, .Box_12 {
     width: 100%;
   }
-  .backbone_wrapper_8, .backbone_wrapper_6, .backbone_wrapper_4,
-  .backbone_box_8, .backbone_box_6, .backbone_box_4 {
-    display: block;
+  .Wrapper_9, .Box_9 {
+    width: 75%;
+  }
+  .Wrapper_8, .Box_8 {
+    width: 66.66%;
+  }
+  .Wrapper_6, .Box_6 {
     width: 50%;
   }
-  .backbone_wrapper_3, .backbone_box_3 {
-    display: block;
-    width: 50%;
+  .Wrapper_4, .Box_4 {
+    width: 33.33%;
   }
-  .backbone_wrapper_1, .backbone_box_1 {
-    display: none;
+  .Wrapper_3, .Box_3 {
+    width: 25%;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) {
-
+  .Wrapper_12,.Wrapper_9, .Wrapper_8, .Wrapper_6, .Wrapper_4, .Wrapper_3 {
+    display: flex;
+    float: left;
+  }
+  .Box_12, .Box_9, .Box_8, .Box_6, .Box_4, .Box_3 {
+    display: block;
+    padding: 3rem;
+    float: left;
+    box-sizing: border-box;
+  }
+  .Wrapper_12, .Box_12 {
+    width: 100%;
+  }
+  .Wrapper_9, .Box_9 {
+    width: 75%;
+  }
+  .Wrapper_8, .Box_8 {
+    width: 66.66%;
+  }
+  .Wrapper_6, .Box_6 {
+    width: 50%;
+  }
+  .Wrapper_4, .Box_4 {
+    width: 33.33%;
+  }
+  .Wrapper_3, .Box_3 {
+    width: 25%;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-
-}
-
-@media (min-width: 1200px) {
-  .backbone_wrapper_12, .backbone_wrapper_9, .backbone_wrapper_8, .backbone_wrapper_6,
-  .backbone_wrapper_4, .backbone_wrapper_3, .backbone_wrapper_1 {
+  .Wrapper_12,.Wrapper_9, .Wrapper_8, .Wrapper_6, .Wrapper_4, .Wrapper_3 {
     display: flex;
     float: left;
   }
-  .backbone_box_12, .backbone_box_9, .backbone_box_8, .backbone_box_6,
-  .backbone_box_4, .backbone_box_3, .backbone_box_1 {
+  .Box_12, .Box_9, .Box_8, .Box_6, .Box_4, .Box_3 {
+    display: block;
+    padding: 5rem;
     float: left;
-    padding: 3rem;
     box-sizing: border-box;
-    text-align: center;
   }
-  .backbone_wrapper_12, .backbone_box_12 {
+  .Wrapper_12, .Box_12 {
     width: 100%;
   }
-  .backbone_wrapper_9, .backbone_box_9 {
+  .Wrapper_9, .Box_9 {
     width: 75%;
   }
-  .backbone_wrapper_8, .backbone_box_8 {
+  .Wrapper_8, .Box_8 {
     width: 66.66%;
   }
-  .backbone_wrapper_6, .backbone_box_6 {
+  .Wrapper_6, .Box_6 {
     width: 50%;
   }
-  .backbone_wrapper_4, .backbone_box_4 {
+  .Wrapper_4, .Box_4 {
     width: 33.33%;
   }
-  .backbone_wrapper_3, .backbone_box_3 {
+  .Wrapper_3, .Box_3 {
     width: 25%;
-  }
-  .backbone_wrapper_1, .backbone_box_1 {
-    width: 8.33%;
   }
 }
