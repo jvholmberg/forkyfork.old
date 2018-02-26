@@ -4,29 +4,29 @@
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   overflow: hidden;
-  color: #eef4fc;
   background-color: #3c4146;
 }
+
+/* Logotype */
 .Header .Box_3 {
   font-size: 1.5rem;
   line-height: 1.5rem;
+  color: #eef4fc;
 }
+.Header .Box_3 .Thin {
+  font-weight: 100;
+}
+
+/* Navigation */
 .Header .Box_9 {
   line-height: 1.5rem;
   text-decoration: none;
 }
-
-
-
-
-
-.Header_Nav {
+.Header .Box_9 ul {
   display: inline-block;
-}
-.Header_Nav_List {
-  float: left;
 }
 .Header_Nav_Item {
   padding-right: 1rem;
   color: #eef4fc;
+  text-decoration: none;
 }

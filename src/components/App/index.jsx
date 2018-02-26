@@ -36,7 +36,7 @@ class App extends React.Component {
         <Box col12 wrapper className="Header">
           <Box col12>
             <Box col3 noPad>
-              <h1>{'{'}forkyfork{'}'}</h1>
+              <h1>forkyfork <span className="Thin">Developer</span></h1>
             </Box>
             <Box col9>
               <ul className="Header_Nav">
