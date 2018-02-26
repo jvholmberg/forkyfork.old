@@ -3,25 +3,29 @@ import PropTypes from 'prop-types';
 
 import './style.scss';
 
-const GetClassName = (args) => {
+const GetClassName = ({
+  className, wrapper, noPad, col12, col9, col8, col6, col4, col3,
+}) => {
   let ret = '';
-  if (args.col12) ret = `${args.wrapper ? 'Wrapper' : 'Box'}_12`;
-  else if (args.col9) ret = `${args.wrapper ? 'Wrapper' : 'Box'}_9`;
-  else if (args.col8) ret = `${args.wrapper ? 'Wrapper' : 'Box'}_8`;
-  else if (args.col6) ret = `${args.wrapper ? 'Wrapper' : 'Box'}_6`;
-  else if (args.col4) ret = `${args.wrapper ? 'Wrapper' : 'Box'}_4`;
-  else if (args.col3) ret = `${args.wrapper ? 'Wrapper' : 'Box'}_3`;
+  if (className) ret = `${className} `;
+  if (noPad) ret = `${ret} NoPadding `;
+  if (col12) ret += `${wrapper ? 'Wrapper' : 'Box'}_12`;
+  else if (col9) ret += `${wrapper ? 'Wrapper' : 'Box'}_9`;
+  else if (col8) ret += `${wrapper ? 'Wrapper' : 'Box'}_8`;
+  else if (col6) ret += `${wrapper ? 'Wrapper' : 'Box'}_6`;
+  else if (col4) ret += `${wrapper ? 'Wrapper' : 'Box'}_4`;
+  else if (col3) ret += `${wrapper ? 'Wrapper' : 'Box'}_3`;
 
   return ret;
 };
 
 const Box = ({
   col12, col9, col8, col6, col4, col3,
-  wrapper, children, ...props
+  wrapper, noPad, children, className, ...props
 }) => {
   // Get className for component from props
   const ClassName = GetClassName({
-    wrapper, col12, col9, col8, col6, col4, col3,
+    className, wrapper, noPad, col12, col9, col8, col6, col4, col3,
   });
 
   // If wrapper is provided create <div> instead of default <span>
@@ -31,7 +35,9 @@ const Box = ({
 };
 Box.defaultProps = {
   children: React.Element,
+  className: '',
   wrapper: false,
+  noPad: false,
   col12: false,
   col9: false,
   col8: false,
@@ -41,7 +47,9 @@ Box.defaultProps = {
 };
 Box.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   wrapper: PropTypes.bool,
+  noPad: PropTypes.bool,
   col12: PropTypes.bool,
   col9: PropTypes.bool,
   col8: PropTypes.bool,

@@ -1,0 +1,32 @@
+@import "reset.scss";
+
+.Header {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  overflow: hidden;
+  color: #eef4fc;
+  background-color: #3c4146;
+}
+.Header .Box_3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.Header .Box_9 {
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+
+
+
+
+.Header_Nav {
+  display: inline-block;
+}
+.Header_Nav_List {
+  float: left;
+}
+.Header_Nav_Item {
+  padding-right: 1rem;
+  color: #eef4fc;
+}

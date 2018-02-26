@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Box, { Title } from '../../components/Backbone';
+import Box, { Title } from '../../components/Basic';
 
 import './Landing.scss';
 
