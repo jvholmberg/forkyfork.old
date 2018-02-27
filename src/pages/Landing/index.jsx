@@ -5,9 +5,8 @@ import Box, { Title, Heading, Paragraph, Logo } from '../../components/Core';
 import './style.scss';
 
 const Landing = () => (
-  <Box wrapper col12 className="Landing_Page">
-
-    <Box col12 center style={{ width: '50%' }}>
+  <Box wrapper col12 center className="Landing_Page">
+    <Box col12 center noFloat style={{ width: '50%' }}>
       <Title>Get Started</Title>
       <Paragraph>
         Contrary to popular belief, Lorem Ipsum is not simply random text.

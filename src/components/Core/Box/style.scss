@@ -13,6 +13,10 @@
 .Box_6.NoPadding, .Box_4.NoPadding, .Box_3.NoPadding {
   padding: 0;
 }
+.Box_12.NoFloat, .Box_9.NoFloat, .Box_8.NoFloat,
+.Box_6.NoFloat, .Box_4.NoFloat, .Box_3.NoFloat {
+  float: none ;
+}
 .Box_12.Center, .Box_9.Center, .Box_8.Center,
 .Box_6.Center, .Box_4.Center, .Box_3.Center {
   text-align: center;
