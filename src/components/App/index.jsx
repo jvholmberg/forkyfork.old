@@ -35,26 +35,26 @@ class App extends React.Component {
       <div>
         <Box col12 wrapper className="Header">
           <Box col12>
-            <Box col3 noPad>
+            <Box col4 noPad>
               <h1>forkyfork <span className="Thin"> | Developer</span></h1>
             </Box>
-            <Box col9>
-              <ul className="Header_Nav">
-                <NavLink
-                  to="/"
-                  className="Header_Nav_Item"
-                  activeClassName="Header_Nav_Item_Active"
-                >
-                  Home
-                </NavLink>
-                <NavLink
-                  to="/login"
-                  className="Header_Nav_Item"
-                  activeClassName="Header_Nav_Item_Active"
-                >
-                  Login
-                </NavLink>
-              </ul>
+            <Box col8>
+              <NavLink
+                exact
+                to="/"
+                className="Header_Nav_Item"
+                activeClassName="Header_Nav_Item_Active"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                exact
+                to="/login"
+                className="Header_Nav_Item"
+                activeClassName="Header_Nav_Item_Active"
+              >
+                Login
+              </NavLink>
             </Box>
           </Box>
         </Box>

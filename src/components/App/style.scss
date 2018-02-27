@@ -8,26 +8,29 @@
 }
 
 /* Logotype */
-.Header .Box_3 {
+.Header .Box_4 {
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: #eef4fc;
 }
-.Header .Box_3 .Thin {
+.Header .Box_4 .Thin {
   font-weight: 100;
   color: #d0d0d0;
 }
 
 /* Navigation */
 .Header .Box_9 {
-  line-height: 1.5rem;
   text-decoration: none;
 }
 .Header .Box_9 ul {
   display: inline-block;
 }
 .Header_Nav_Item {
-  padding-right: 1rem;
+  margin-right: 1rem;
   color: #eef4fc;
   text-decoration: none;
+  line-height: 1.5rem;
+}
+.Header_Nav_Item_Active {
+  color: #d0d0d0;
 }
